@@ -9,8 +9,8 @@ import firebaseConfig from "./config/firebaseConfig.json";
 
 initializeApp(firebaseConfig);
 
-import { getFunctions, connectFunctionsEmulator } from "firebase/functions";
-const functions = getFunctions();
-connectFunctionsEmulator(functions, "localhost", 5001);
+// import { getFunctions, connectFunctionsEmulator } from "firebase/functions";
+// const functions = getFunctions();
+// connectFunctionsEmulator(functions, "localhost", 5001);
 
 createApp(App).use(store).use(router).mount("#app");
