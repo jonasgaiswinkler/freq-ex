@@ -1,14 +1,12 @@
 module.exports = {
-  root: true,
+  parserOptions: {
+    // Required for certain syntax usages
+    ecmaVersion: 2020,
+    sourceType: "module",
+  },
   env: {
     es6: true,
-    node: true,
   },
-  extends: [
-    "eslint:recommended",
-    "google",
-  ],
-  rules: {
-    quotes: ["error", "double"],
-  },
+  plugins: ["promise"],
+  extends: "eslint:recommended",
 };
